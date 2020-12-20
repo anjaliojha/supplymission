@@ -38,7 +38,9 @@ function setup() {
 	groundSprite=createSprite(width/2, height-35, width,10);
 	groundSprite.shapeColor="black"
 
-	box1=new Box(400,200,20,100);
+	box1=new Box(390,200,100,20);
+	box2=new Box(190,100,20,100);
+	box3=new Box(490,300,20,100);
 
 ////creating the engine
 	engine = Engine.create();
@@ -78,6 +80,9 @@ function draw() {
   packageSprite.y= packageBody.position.y 
 
 	box1.display();
+	box2.display();
+	box3.display();
+
 
 drawSprites();
  
