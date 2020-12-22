@@ -38,9 +38,7 @@ function setup() {
 	groundSprite=createSprite(width/2, height-35, width,10);
 	groundSprite.shapeColor="black"
 
-	box1=new Box(390,200,100,20);
-	box2=new Box(190,100,20,100);
-	box3=new Box(490,300,20,100);
+
 
 ////creating the engine
 	engine = Engine.create();
@@ -58,7 +56,9 @@ function setup() {
 //creating the Ground
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
 	 World.add(world, ground);
-	 
+	 box1=new Box(390,200,100,20);
+	 box2=new Box(190,100,20,100);
+	 box3=new Box(490,300,20,100);
 
 //running the engine
 	Engine.run(engine);

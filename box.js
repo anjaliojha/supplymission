@@ -14,7 +14,7 @@ class Box{
 display(){
 var pos =this.object.position;
 
-recMode(CENTER);
+rectMode(CENTER);
 rect(pos.x,pos.y,this.width,this.height)
 
 }
